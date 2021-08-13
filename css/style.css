@@ -56,9 +56,8 @@ header{
     background-image: url(../images/mobile/image-hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 60vh;
-    padding: min(1rem , 3vh);
-    padding-top: 3rem;
+    height: 120vh;
+    padding: 3rem;
     display: grid;
     position: relative;
     z-index: 1000;
@@ -70,6 +69,7 @@ header .logo , .menu-btn{
 }
 
 header nav{ 
+    color: white;
     display: none;
 }
 
@@ -84,10 +84,10 @@ header nav.active{
     color: white;
     display: flex;
     align-items: center;
-    padding-inline: 1rem;
+    padding-inline: 3rem;
 }
 
-header nav.active a{ 
+header nav a{ 
     font-size: 1.65rem;
     text-transform: uppercase;
     display: inline-block;
@@ -105,6 +105,7 @@ header nav.active a{
     align-self: center;
     justify-self: start;
     border: 3px solid white;
+    margin: 3rem 0;
 }
 
 header h1{ 
@@ -179,7 +180,7 @@ header h1{
 .image a{ 
     display: block;
     width: 100%;
-    height: 18vh;
+    padding: 3rem 0;
     background-position: center;
     background-size: cover;
     background-color: #444;
@@ -295,12 +296,19 @@ nav a:hover::after , .social-links a:hover::after{
     transform: scaleX(1);
 }
 
+@media(min-width:800px){ 
+    header{ 
+        height: 100vh;
+        align-items: center;
+    }
+}
+
 @media(min-width:900px){ 
 
     header{ 
         padding-inline: 10vw;
         background-image: url(../images/desktop/image-hero.jpg);
-        background-color: #333;
+        background-color: #333 ;
         background-blend-mode: overlay;
         height: 90vh;
     }
@@ -433,4 +441,11 @@ nav a:hover::after , .social-links a:hover::after{
     .info .img-container::after{ 
         display: none;
     }
+}
+
+@media(max-width:320px){ 
+    header{ 
+        padding-inline: 1rem;
+    }
+
 }
