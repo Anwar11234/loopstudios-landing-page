@@ -9,7 +9,7 @@ const toggleMenu = () => {
 }
 
 const toggleMenuBtnIcon = () => { 
-    if(menuBtnIcon.src === 'http://127.0.0.1:5500/images/icon-hamburger.svg') { 
+    if(menu.classList.contains('active')) { 
         menuBtnIcon.src = 'images/icon-close.svg';
         menuBtnIcon.alt = 'close menu';
     }
