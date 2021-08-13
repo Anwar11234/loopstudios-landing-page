@@ -87,7 +87,7 @@ header nav.active{
     padding-inline: 3rem;
 }
 
-header nav a{ 
+header nav.active a{ 
     font-size: 1.65rem;
     text-transform: uppercase;
     display: inline-block;
